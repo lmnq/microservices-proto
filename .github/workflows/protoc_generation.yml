@@ -22,7 +22,10 @@ jobs:
             go-version: 'stable'
             check-latest: true
 
-        - name: Install Protocol Buffer Compiler and Plugins
+        - name: Install Protocol Buffer Compiler
+          uses: arduino/setup-protoc@v3
+
+        - name: Install Protocol Buffer Plugins
           run: |
             go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
             go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
