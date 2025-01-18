@@ -43,6 +43,9 @@ jobs:
         - name: Generate Go code from protocol buffer definitions
           run: ./protoc-gen-go.sh
 
+        - name: Install go dependencies
+          run: go mod tidy
+
         - name: Commit and push changes
           run: |
             git config --global user.email "nuraddinov4101@gmail.com"
