@@ -2,6 +2,8 @@ name: "Protobuf Generation"
 
 on:
   push:
+    branches:
+      - main
     paths:
         - 'proto/**/*.proto'
     tags:
