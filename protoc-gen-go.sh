@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+# set -e
 
 # Generate Go code from protocol buffer definitions
 PROTO_PATH="./proto"
