@@ -44,4 +44,4 @@ jobs:
             git config --global user.name "lmnq"
             git add .
             git commit -m "Update generated code"
-            git push origin main
+            git push
